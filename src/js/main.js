@@ -40,7 +40,11 @@ homeButton.addEventListener( 'click', () => {
 
 aboutButton.addEventListener( 'click', () => {
     renderAbout( indexAbout );
-  
+
+    const paragraphAbout = document.querySelector('#paragraphAbout');
+    const parrafoAbout = document.querySelector('#parrafoAbout');
+    const translateButton = document.querySelector('#translateButton');
+
     if(indexAbout.style.display === 'none'){
         indexHome.style.display = 'none';
         indexAbout.style.display = 'block';
@@ -48,6 +52,19 @@ aboutButton.addEventListener( 'click', () => {
         indexExperience.style.display = 'none';
         indexEducation.style.display = 'none';
     }
+
+    translateButton.addEventListener( 'click', () => {
+        console.log('translate button clicked');
+        if(paragraphAbout.style.display === 'none'){
+            paragraphAbout.style.display = 'block';
+            parrafoAbout.style.display = 'none';
+        }else{
+            paragraphAbout.style.display = 'none';
+            parrafoAbout.style.display = 'block';
+        }
+    });
+
+
 });
 
 skillButton.addEventListener( 'click', () => {

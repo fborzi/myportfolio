@@ -1,29 +1,32 @@
 
 export const renderAbout = ( indexAbout ) => {
-    indexAbout.innerHTML = `
+    const aboutSection = document.createElement('div');
+    aboutSection.innerHTML = `
         <div class="container" id="about" >
             <div class="row">
                 <div class="col-4"></div>
                 <div class="col-8 rounded-4" id="aboutColumn">
                     <div class="container" >
-                        <h1 id="homeTitle">
-                        About me.
-                        </h1>
-                        <p>
-                        I am working with BBVA bank and am involved in multiple Java projects.<br>
-                        <br>
-                        In the first project I worked on, I took the initiative to motivate<br> 
-                        the team to address all issues and achieve the project's goals.<br> 
-                        Unfortunately, the project was eventually discontinued due to<br> 
-                        a security problem on the bank's side.<br>
-                        <br>
-                        In the subsequent project, I worked collaboratively with a colleague<br>
-                        in pair programming to find innovative solutions to the main issues.<br>
-                        <br>
-                        Currently, I am working on a larger team using the agile methodology,<br>
-                        Scrum, to develop an online banking website for businesses.<br>
-                        Although my focus is primarily on JavaScript, I am also responsible <br>
-                        for integrating HTML and CSS pages into the project.<br>
+                        <div class="row">
+                            <div class="col-10">
+                                <h1 id="homeTitle">
+                                    About me.
+                                </h1>
+                            </div>
+                            <div class="col-2 my-2" style="padding: 0px;">
+                                <button role="button" id="translateButton" class="btn btn-light float-md-end">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                                        <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+                                        <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <p id="paragraphAbout" style="display: block;">
+                            ${paragraph}
+                        </p>
+                        <p id="parrafoAbout" style="display: none;">
+                            ${parrafo}
                         </p>
                     </div>
                     <div class="mb-3 float-md-end">
@@ -53,4 +56,47 @@ export const renderAbout = ( indexAbout ) => {
         </div>
     `;
 
+    indexAbout.appendChild(aboutSection);
+
 }
+
+const paragraph = `
+    I am working with BBVA bank and am involved in multiple Java projects.<br>
+    <br>
+    In the first project I worked on, I took the initiative to motivate<br> 
+    the team to address all issues and achieve the project's goals.<br> 
+    Unfortunately, the project was eventually discontinued due to<br> 
+    a security problem on the bank's side.<br>
+    <br>
+    In the subsequent project, I worked collaboratively with a colleague<br>
+    in pair programming to find innovative solutions to the main issues.<br>
+    <br>
+    Currently, I am working on a larger team using the agile methodology,<br>
+    Scrum, to develop an online banking website for businesses.<br>
+    Although my focus is primarily on JavaScript, I am also responsible <br>
+    for integrating HTML and CSS pages into the project.<br>
+`;
+
+const parrafo = `
+    Estoy trabajando con Java para varios proyectos con el banco BBVA.<br>
+    <br>
+    Para el primer proyecto que tuve, yo era quien le ponia garra y empujaba<br>
+    para que el proyecto salga, intentaba dar lo mejor de mi en ver qué<br>
+    tareas hacían falta para lograr cumplir con los objetivos, <br>
+    lamentablemente ese proyecto se cayó por un problema de seguridad del<br>
+    lado del banco.<br>
+    <br>
+    Luego estuve trabajando en otro proyecto en Pair Programming con otra<br>
+    compañera en donde logré resolver la problematica en cuestión de<br>
+    varias maneras.<br>
+    <br>
+    Actualmente estoy trabajando en otro proyecto de banca online para<br>
+    empresas en donde somos un equipo de varias personas, que trabajamos<br>
+    con metodologias ágiles (scrum), este último proyecto es más fullstack,<br>
+    si bien no me encargo de la parte front de HTML y CSS, si tengo que<br>
+    integrar las pantallas con JavaScript y Java para el backend.<br>
+    <br>
+    Aparte de esto, estoy desarrollando un ecommerce con Java Spring Boot<br>
+    y Angular para una empresa local, hay parte del proyecto, que sigue<br>
+    en desarrollo actualmente, en mi GitHub.<br>
+`;

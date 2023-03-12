@@ -6,7 +6,7 @@ export const renderEducation = ( indexEducation ) => {
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-md-4 mb-3">
                     <div class="card" id="udemy" style="width: 18rem;">
                         <a href="/assets/images/solid.jpg" download>
                             <img class="card-img-top" id="img1" src="/assets/images/solid.jpg" alt="solid">
@@ -16,7 +16,7 @@ export const renderEducation = ( indexEducation ) => {
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-4 mb-3">
                     <div class="card" id="udemy" style="width: 18rem;">
                         <a href="/assets/images/scrum-estimation.jpg" download>
                             <img class="card-img-top" id="img1" src="/assets/images/scrum-estimation.jpg" alt="scrum-estimation">
@@ -33,7 +33,7 @@ export const renderEducation = ( indexEducation ) => {
         </div>
         <div class="container">
             <div class="row mb-5">
-                <div class="col-3">
+                <div class="col-md-4 mb-3">
                     <div class="card" id="university" style="width: 18rem;">
                         <a href="https://sitio.unnoba.edu.ar/" target="_blank">
                             <img class="card-img-top" id="img1" src="/assets/images/unnoba.png" alt="unnoba">
@@ -43,7 +43,7 @@ export const renderEducation = ( indexEducation ) => {
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-4 mb-3">
                     <div class="card" id="university" style="width: 18rem;">
                         <a href="https://www.cepec.edu.ar/" target="_blank">
                             <img class="card-img-top" id="img1" src="/assets/images/suisse.png" alt="la-suisse">
