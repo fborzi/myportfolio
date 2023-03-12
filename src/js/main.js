@@ -17,9 +17,13 @@ const indexSkills = document.querySelector('#skills');
 const indexExperience = document.querySelector('#experience');
 const indexEducation = document.querySelector('#education');
 
-renderHeader( indexHeader );
+renderHeader(indexHeader);
 
-renderHome( indexHome );
+renderHome(indexHome);
+
+renderAbout(indexAbout);
+
+renderExperience(indexExperience);
 
 const homeButton = document.querySelector('#homeButton');
 const aboutButton = document.querySelector('#aboutButton');
@@ -27,9 +31,9 @@ const skillButton = document.querySelector('#skillButton');
 const experienceButton = document.querySelector('#experienceButton');
 const educationButton = document.querySelector('#educationButton');
 
-homeButton.addEventListener( 'click', () => {
+homeButton.addEventListener('click', () => {
 
-    if(indexHome.style.display === 'none'){
+    if (indexHome.style.display === 'none') {
         indexHome.style.display = 'block';
         indexAbout.style.display = 'none';
         indexSkills.style.display = 'none';
@@ -38,39 +42,36 @@ homeButton.addEventListener( 'click', () => {
     }
 });
 
-aboutButton.addEventListener( 'click', () => {
-    renderAbout( indexAbout );
+aboutButton.addEventListener('click', () => {
 
-    const paragraphAbout = document.querySelector('#paragraphAbout');
-    const parrafoAbout = document.querySelector('#parrafoAbout');
-    const translateButton = document.querySelector('#translateButton');
-
-    if(indexAbout.style.display === 'none'){
+    if (indexAbout.style.display === 'none') {
         indexHome.style.display = 'none';
         indexAbout.style.display = 'block';
         indexSkills.style.display = 'none';
         indexExperience.style.display = 'none';
         indexEducation.style.display = 'none';
     }
-
-    translateButton.addEventListener( 'click', () => {
-        console.log('translate button clicked');
-        if(paragraphAbout.style.display === 'none'){
-            paragraphAbout.style.display = 'block';
-            parrafoAbout.style.display = 'none';
-        }else{
-            paragraphAbout.style.display = 'none';
-            parrafoAbout.style.display = 'block';
-        }
-    });
-
-
 });
 
-skillButton.addEventListener( 'click', () => {
-    renderSkills( indexSkills );
+const paragraphAbout = document.querySelector('#paragraphAbout');
+const parrafoAbout = document.querySelector('#parrafoAbout');
+const translateButton = document.querySelector('#translateButton');
 
-    if(indexSkills.style.display === 'none'){
+translateButton.addEventListener('click', () => {
+    console.log('translate button clicked');
+    if (paragraphAbout.style.display === 'none') {
+        paragraphAbout.style.display = 'block';
+        parrafoAbout.style.display = 'none';
+    } else {
+        paragraphAbout.style.display = 'none';
+        parrafoAbout.style.display = 'block';
+    }
+});
+
+skillButton.addEventListener('click', () => {
+    renderSkills(indexSkills);
+
+    if (indexSkills.style.display === 'none') {
         indexHome.style.display = 'none';
         indexAbout.style.display = 'none';
         indexSkills.style.display = 'block';
@@ -79,10 +80,9 @@ skillButton.addEventListener( 'click', () => {
     }
 });
 
-experienceButton.addEventListener( 'click', () => {
-    renderExperience( indexExperience );
+experienceButton.addEventListener('click', () => {
 
-    if(indexExperience.style.display === 'none'){
+    if (indexExperience.style.display === 'none') {
         indexHome.style.display = 'none';
         indexAbout.style.display = 'none';
         indexSkills.style.display = 'none';
@@ -90,11 +90,51 @@ experienceButton.addEventListener( 'click', () => {
         indexEducation.style.display = 'none';
     }
 });
+const englishNeoris = document.querySelector('#englishNeoris');
+const spanishNeoris = document.querySelector('#spanishNeoris');
+const englishDigital = document.querySelector('#englishDigital');
+const spanishDigital = document.querySelector('#spanishDigital');
+const englishCyan = document.querySelector('#englishCyan');
+const spanishCyan = document.querySelector('#spanishCyan');
+const englishRotary = document.querySelector('#englishRotary');
+const spanishRotary = document.querySelector('#spanishRotary');
 
-educationButton.addEventListener( 'click', () => {
-    renderEducation( indexEducation );
+const translateButtonExperience = document.querySelector('#translateButtonExperience');
 
-    if(indexEducation.style.display === 'none'){
+translateButtonExperience.addEventListener('click', () => {
+
+    if (
+        englishNeoris.style.display === 'none' &&
+        englishDigital.style.display === 'none' &&
+        englishCyan.style.display === 'none' &&
+        englishRotary.style.display === 'none'
+    ) {
+        englishNeoris.style.display = 'block';
+        englishDigital.style.display = 'block';
+        englishCyan.style.display = 'block';
+        englishRotary.style.display = 'block';
+        spanishNeoris.style.display = 'none';
+        spanishDigital.style.display = 'none';
+        spanishCyan.style.display = 'none';
+        spanishRotary.style.display = 'none';
+
+    } else {
+        englishNeoris.style.display = 'none';
+        englishDigital.style.display = 'none';
+        englishCyan.style.display = 'none';
+        englishRotary.style.display = 'none';
+        spanishNeoris.style.display = 'block';
+        spanishDigital.style.display = 'block';
+        spanishCyan.style.display = 'block';
+        spanishRotary.style.display = 'block';
+    }
+});
+
+
+educationButton.addEventListener('click', () => {
+    renderEducation(indexEducation);
+
+    if (indexEducation.style.display === 'none') {
         indexHome.style.display = 'none';
         indexAbout.style.display = 'none';
         indexSkills.style.display = 'none';
