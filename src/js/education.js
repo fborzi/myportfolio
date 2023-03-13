@@ -26,6 +26,16 @@ export const renderEducation = ( indexEducation ) => {
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card" id="neorislab" style="width: 18rem;">
+                        <a href="/assets/images/lab.png" download>
+                            <img class="card-img-top" id="img1" src="/assets/images/lab.png" alt="neoris-lab">
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text">Neoris LAB: JAVA + Angular</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container mt-5">

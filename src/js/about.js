@@ -61,42 +61,51 @@ export const renderAbout = ( indexAbout ) => {
 }
 
 const paragraph = `
-    I am working with BBVA bank and am involved in multiple Java projects.<br>
+    Hi there,<br>
     <br>
-    In the first project I worked on, I took the initiative to motivate<br> 
-    the team to address all issues and achieve the project's goals.<br> 
-    Unfortunately, the project was eventually discontinued due to<br> 
-    a security problem on the bank's side.<br>
+    My name is Franco Borzi and I am a software developer with a wide range of<br>
+    professional experience. I have worked in various industries such as <br>
+    hospitality and retail, where I sharpened my customer service skills and <br>
+    automated several manual processes. Currently, I am working with the BBVA bank<br>
+    at Neoris, where I mainly work with Java, HTML, CSS, JavaScript, and <br>
+    proprietary frameworks based on Spring Boot. I take pride in being a <br>
+    proactive team player who motivates the team to achieve our goals.<br>
     <br>
-    In the subsequent project, I worked collaboratively with a colleague<br>
-    in pair programming to find innovative solutions to the main issues.<br>
+    I am detail-oriented and enjoy working independently, preferring to be given<br>
+    multiple tasks at once rather than asking for direction every day.<br>
+    I thrive on challenging projects and love learning new things. Outside of work,<br>
+    I enjoy playing Minecraft and Age of Empires 2, as well as staying active<br>
+    with CrossFit. I am also a tech enthusiast, keeping up to date with the latest<br>
+    products and developments in the industry.<br>
     <br>
-    Currently, I am working on a larger team using the agile methodology,<br>
-    Scrum, to develop an online banking website for businesses.<br>
-    Although my focus is primarily on JavaScript, I am also responsible <br>
-    for integrating HTML and CSS pages into the project.<br>
+    If you have any questions or would like to chat further, feel free to reach out to me. <br>
+    I'm excited to take on new challenges and look forward to hearing from you!<br>
+    <br>
+
 `;
 
 const parrafo = `
-    Estoy trabajando con Java para varios proyectos con el banco BBVA.<br>
+    Hola,<br>
     <br>
-    Para el primer proyecto que tuve, yo era quien le ponia garra y empujaba<br>
-    para que el proyecto salga, intentaba dar lo mejor de mi en ver qué<br>
-    tareas hacían falta para lograr cumplir con los objetivos, <br>
-    lamentablemente ese proyecto se cayó por un problema de seguridad del<br>
-    lado del banco.<br>
+    Mi nombre es Franco Borzi y soy desarrollador de software con una amplia <br>
+    experiencia profesional. Trabajé en varias industrias diferentes como la de la <br>
+    hospitalidad, en un comercio de electrodomésticos, insumos y computación, <br>
+    donde pude desarrollar mis habilidades de atención al cliente y automatizar<br>
+    varios procesos previamente manuales. Actualmente, estoy trabajando para el <br>
+    banco BBVA en Neoris, donde trabajamos principalmente con Java, HTML, CSS,<br>
+    JavaScript y algunos frameworks propios basados en Spring Boot. <br>
+    Me enorgullezco de ser una persona proactiva que intenta motivar a su equipo <br>
+    para alcanzar los objetivos.<br>
     <br>
-    Luego estuve trabajando en otro proyecto en Pair Programming con otra<br>
-    compañera en donde logré resolver la problematica en cuestión de<br>
-    varias maneras.<br>
+    Soy detallista y me gusta tener cierta independencia en el trabajo, prefiero <br>
+    que me den varias tareas todas juntas a tener que estar preguntando <br>
+    que hacer todos los días. Me encantan los proyectos que representan un desafío<br>
+    y aprender cosas nuevas. Afuera del trabajo, me gusta jugar al Minecraft y <br>
+    al Age of Empire 2, también hago CrossFit. Me encanta ver videos sobre tecnología y<br>
+    productos nuevos que salen al mercado.<br>
     <br>
-    Actualmente estoy trabajando en otro proyecto de banca online para<br>
-    empresas en donde somos un equipo de varias personas, que trabajamos<br>
-    con metodologias ágiles (scrum), este último proyecto es más fullstack,<br>
-    si bien no me encargo de la parte front de HTML y CSS, si tengo que<br>
-    integrar las pantallas con JavaScript y Java para el backend.<br>
+    En caso de querer conocerme más, sentite en libertad de contactarme. <br>
+    Me entusiasma tener nuevos desafíos, espero tener noticias de tu parte!<br>
     <br>
-    Aparte de esto, estoy desarrollando un ecommerce con Java Spring Boot<br>
-    y Angular para una empresa local, hay parte del proyecto, que sigue<br>
-    en desarrollo actualmente, en mi GitHub.<br>
+
 `;
